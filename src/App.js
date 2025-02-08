@@ -36,8 +36,8 @@ function Tabbed({ content }) {
         <Tab num={1} activeTab={activeTab} onClick={setActiveTab} />
         <Tab num={2} activeTab={activeTab} onClick={setActiveTab} />
         <Tab num={3} activeTab={activeTab} onClick={setActiveTab} />
+        {console.log(content.at(activeTab).summary)}
       </div>
-
       {activeTab <= 2 ? (
         <TabContent item={content.at(activeTab)} />
       ) : (
